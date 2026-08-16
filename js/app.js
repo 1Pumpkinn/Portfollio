@@ -8,12 +8,12 @@
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const lines = [
-    'name: ElementPlugin',
-    'main: saturn.elementPlugin.ElementPlugin',
-    'version: 1.2.0',
-    'api-version: "1.21.10"',
+    'name: PumpkinDev',
+    'main: saturn.pumpkinDev.PumpkinDev',
+    'version: 1.0.0',
+    'api-version: "1.21+"',
     'load: STARTUP',
-    'authors: [ ___Pumpkinn ]',
+    'authors: PumpkinDev',
     'status: loading...'
   ];
   const text = lines.join('\n');
