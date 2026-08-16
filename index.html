@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tyrone — Minecraft Server Systems Developer</title>
+  <title>PumpkinDev Portfolio</title>
   <meta name="description" content="Java developer building plugin and mod systems for Minecraft servers — elemental abilities, rune systems, dimension logic, and custom game mechanics.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -26,7 +26,7 @@
 
 <header class="nav">
   <a href="#top" class="nav__mark">
-    <span class="nav__mark-bracket">[</span>Tyrone<span class="nav__mark-bracket">]</span>
+    <span class="nav__mark-bracket">[</span>PumpkinDev<span class="nav__mark-bracket">]</span>
   </a>
   <nav class="nav__links">
     <a href="#projects">projects</a>
@@ -41,7 +41,7 @@
   <section class="hero">
     <div class="hero__text">
       <p class="eyebrow">// PumpkinDev plugin developer</p>
-      <h1>I build SMP plugins<br>or utility plugins for Minecraft servers.</h1>
+      <h1>I build SMP plugins<br>or utility plugins for servers.</h1>
       <p class="hero__lead">
         Hiya, I’m Pumpkin, a Minecraft plugin developer
         who creates custom plugins. that brings unique mechanics
@@ -83,6 +83,9 @@
         <p>A SMP Plugin with Elements & mana,
           reroll and upgrade items, a player trust system for abilities, and backups by save/backup data
           commands so if an error occurs player-data is not lost.</p>
+        <button class="card__img-btn" data-lightbox="img/elementplugin.jpg" data-caption="Earth element ability effect in ElementPlugin" aria-label="View ElementPlugin screenshot larger">
+          <img class="card__img" src="img/elementplugin.jpg" alt="Earth element ability effect in ElementPlugin" loading="lazy">
+        </button>
       </article>
 
       <article class="card card--fire">
@@ -114,6 +117,9 @@
         <p>Lets players set their pronouns or sexuality tag through <code>/pronouns</code> and
           <code>/sexuality</code>, displayed in tab, also very customizable allowing you to add your own or edit existing
           pronouns or sexualities.</p>
+        <button class="card__img-btn" data-lightbox="img/queertab.jpg" data-caption="QueerTab pronoun and sexuality preset menu in-game" aria-label="View QueerTab screenshot larger">
+          <img class="card__img" src="img/queertab.jpg" alt="QueerTab pronoun and sexuality preset menu in-game" loading="lazy">
+        </button>
       </article>
 
       <article class="card card--air">
@@ -124,6 +130,9 @@
         <h3>ItemLimiter</h3>
         <p>Caps a specific item a player can hold at once. Admins add, remove, and check
           limits per item straight from commands a small utility plugin that helps SMP Owners limit items in a players inventory.</p>
+        <button class="card__img-btn" data-lightbox="img/itemlimiter.png" data-caption="ItemLimiter limited-items config file" aria-label="View ItemLimiter screenshot larger">
+          <img class="card__img" src="img/itemlimiter.png" alt="ItemLimiter limited-items config file" loading="lazy">
+        </button>
       </article>
 
     </div>
@@ -154,8 +163,13 @@
 </main>
 
 <footer class="footer">
-  <p>built by Tyrone — running on Java, held together by Paper.</p>
+  <p>built by PumpkinDev.</p>
 </footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close image">×</button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="">
+</div>
 
 <script src="js/app.js"></script>
 </body>
