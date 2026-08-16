@@ -1,33 +1,163 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+  <title>Tyrone — Minecraft Server Systems Developer</title>
+  <meta name="description" content="Java developer building plugin and mod systems for Minecraft servers — elemental abilities, rune systems, dimension logic, and custom game mechanics.">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
-
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#0d1015">
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+<div class="grid-overlay" aria-hidden="true"></div>
 
+<header class="nav">
+  <a href="#top" class="nav__mark">
+    <span class="nav__mark-bracket">[</span>Tyrone<span class="nav__mark-bracket">]</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#projects">projects</a>
+    <a href="#stack">stack</a>
+    <a href="#contact">contact</a>
+    <a href="https://github.com/1Pumpkinn" target="_blank" rel="noopener">github</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">// server-side java developer</p>
+      <h1>I build the systems<br>a server runs on.</h1>
+      <p class="hero__lead">
+        Plugin and mod developer working in the Paper / Bukkit / Spigot ecosystem —
+        elemental ability systems, rune and enchantment logic, dimension rules,
+        and the mechanics that hold a survival server together after the tenth reset.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">view projects</a>
+        <a href="https://github.com/1Pumpkinn" target="_blank" rel="noopener" class="btn btn--ghost">@1Pumpkinn on GitHub</a>
+      </div>
+    </div>
+
+    <div class="hero__panel" aria-hidden="true">
+      <div class="panel">
+        <div class="panel__bar">
+          <div class="panel__dots"><span></span><span></span><span></span></div>
+          <span class="panel__title">plugin.yml</span>
+        </div>
+        <pre class="panel__body"><code id="typewriter"></code><span class="cursor">&nbsp;</span></pre>
+        <div class="panel__status">
+          <span class="status-dot"></span>
+          <span>server online — 4 plugins loaded</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <p class="eyebrow">// projects</p>
+    <h2 class="section__title">What's running on the server</h2>
+
+    <div class="cards">
+
+      <article class="card card--curse">
+        <div class="card__head">
+          <span class="tag tag--curse">plugin</span>
+          <span class="card__meta">Java · Paper 1.21</span>
+        </div>
+        <h3>ElementPlugin</h3>
+        <p>A SMP Plugin with Elements & mana,
+          reroll and upgrade items, a player trust system for abilities, and backups by save/backup data
+          commands so if an error occurs player-data is not lost.</p>
+      </article>
+
+      <article class="card card--fire">
+        <div class="card__head">
+          <span class="tag tag--fire">plugin</span>
+          <span class="card__meta">Java · Paper 1.21</span>
+        </div>
+        <h3>ElementalMaces</h3>
+        <p>Elemental variants of the mace Air, Fire, Water, and Earth each obtainable through
+          <code>/mace</code> this was used for a econ server so did not add an actual way to get them in survival</p>
+      </article>
+
+      <article class="card card--earth">
+        <div class="card__head">
+          <span class="tag tag--earth">plugin</span>
+          <span class="card__meta">Java · Paper 1.21</span>
+        </div>
+        <h3>MaceStructure</h3>
+        <p>Mace structure generates once within the world border
+          Mace also has a settable cooldown, Plugin also does not allow you to store maces in echests.</p>
+      </article>
+
+      <article class="card card--water">
+        <div class="card__head">
+          <span class="tag tag--water">plugin</span>
+          <span class="card__meta">Java · Paper 1.21</span>
+        </div>
+        <h3>QueerTab</h3>
+        <p>Lets players set their pronouns or sexuality tag through <code>/pronouns</code> and
+          <code>/sexuality</code>, displayed in tab, also very customizable allowing you to add your own or edit existing
+          pronouns or sexualities.</p>
+      </article>
+
+      <article class="card card--air">
+        <div class="card__head">
+          <span class="tag tag--air">plugin</span>
+          <span class="card__meta">Java · Paper 1.21</span>
+        </div>
+        <h3>ItemLimiter</h3>
+        <p>Caps a specific item a player can hold at once. Admins add, remove, and check
+          limits per item straight from commands a small utility plugin that helps SMP Owners limit items in a players inventory.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="stack" class="section reveal">
+    <p class="eyebrow">// stack</p>
+    <h2 class="section__title">Tools of the trade</h2>
+    <ul class="stack-list">
+      <li><span>Java</span><small>primary language</small></li>
+      <li><span>Paper / Bukkit / Spigot</span><small>plugin API</small></li>
+      <li><span>PacketEvents</span><small>packet-level control</small></li>
+      <li><span>Godot 4 / GLSL</span><small>shaders</small></li>
+      <li><span>Git / GitHub</span><small>version control</small></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section reveal contact">
+    <p class="eyebrow">// contact</p>
+    <h2 class="section__title">Get in touch</h2>
+    <p class="contact__lead">Open to plugin work, mod collaborations, or just talking server architecture.</p>
+    <div class="contact__links">
+      <a href="https://github.com/1Pumpkinn" target="_blank" rel="noopener" class="btn btn--primary">GitHub</a>
+      <a href="mailto:you@example.com" class="btn btn--ghost">you@example.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>built by Tyrone — running on Java, held together by Paper.</p>
+</footer>
+
+<script src="js/app.js"></script>
 </body>
 
 </html>
